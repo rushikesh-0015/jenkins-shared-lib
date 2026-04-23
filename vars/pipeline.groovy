@@ -1,32 +1,18 @@
 def call(Map config) {
-    pipeline {
-        agent any
 
-        stages {
+    stage('Build') {
+        echo "Building ${config.appName}"
+    }
 
-            stage('Build') {
-                steps {
-                    echo "Building ${config.appName}"
-                }
-            }
+    stage('Test') {
+        echo "Testing ${config.appName}"
+    }
 
-            stage('Test') {
-                steps {
-                    echo "Testing ${config.appName}"
-                }
-            }
+    stage('Scan') {
+        echo "Scanning ${config.appName}"
+    }
 
-            stage('Scan') {
-                steps {
-                    echo "Scanning ${config.appName}"
-                }
-            }
-
-            stage('Deploy') {
-                steps {
-                    echo "Deploying ${config.appName}"
-                }
-            }
-        }
+    stage('Deploy') {
+        echo "Deploying ${config.appName}"
     }
 }
