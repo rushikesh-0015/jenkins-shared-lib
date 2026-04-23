@@ -130,15 +130,26 @@ Implemented using Jenkins Role Strategy Plugin:
 * Build permission
 * Restricted from admin settings
 
+## 📸 Screenshots
+
+### Jenkins Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Pipeline Output
+![Output](screenshots/output.png)
+
+### Stage View
+![Stage](screenshots/stage_view.png)
+
 ---
 
 ##  Features
 
-* ✅ Centralized Jenkins setup
-* ✅ Reusable shared pipeline library
-* ✅ Multi-application support
-* ✅ Standardized CI/CD stages
-* ✅ Role-based access control
+* Centralized Jenkins setup
+* Reusable shared pipeline library
+* Multi-application support
+* Standardized CI/CD stages
+* Role-based access control
 
 ---
 
