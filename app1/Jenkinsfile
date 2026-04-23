@@ -1,0 +1,15 @@
+@Library('shared-lib') _
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Run Pipeline') {
+            steps {
+                script {
+                    myPipeline(appName: "App1")
+                }
+            }
+        }
+    }
+}
